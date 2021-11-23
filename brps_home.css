@@ -87,20 +87,89 @@
 .buttons button:hover {
 	background-color: #2d6acc;
 }
+.navbar {
+	display: flex;
+	 list-style-type: none;
+	 background-color: #2d6acc;
+	 
+}
+.active a {
+	display: block;
+	text-decoration: none;
+	font-family: 'Shippori Antique', sans-serif;
+	color: #ffffff;
+    font-size: 18px;
+    margin-left: 25px;
+    height: 55px;
+    padding-top: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.active a:hover {
+	background-color: #0045b5;
+    color: #fcd200;
+}
+#about-button {
+	margin-left: 600px;
+}
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+  margin-top: 2px;
+}
+.carousel-cell img {
+	width: 100%;
+}
+.carousel-cell {
+  width: 66%;
+  height: 500px;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
 @media only screen and (max-width: 600px) {
 	.container1{
 		flex-direction: column;
 		height: 900px;
+		 align-items: center;
+         justify-content: center;
+	}
+	.buttons{
+		 flex-direction: column;
+		 align-items: center;
+         justify-content: center;
+         margin-left: 0px;
+         margin-right: 0px;
+	}
+	.contact{
+		 flex-direction: row;
+		 align-items: center;
+         justify-content: center;
+         margin-left: 0px;
+         margin-right: 0px;
 	}
 	.container1 img {
-	width: 141px;
-	height: 141px;
-	margin-left: 250px;
-	margin-top: 50px;
-}
+	 flex-direction: column;
+		 align-items: center;
+         justify-content: center;
+         margin-left: 0px;
+    }
 .headings {
-	margin-left: 200px;
-	margin-top: 80px;
-	font-family: 'Shippori Antique', sans-serif;
-}
+	 flex-direction: column;
+	 align-items: center;
+     justify-content: center;
+     margin-left: 0px;
+	 font-family: 'Shippori Antique', sans-serif;
+    }
+    .navbar {
+    	flex-direction: column;
+    	 align-items: center;
+         justify-content: center;
+    }
 }

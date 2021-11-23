@@ -2,7 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- flickity CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet">
@@ -30,5 +32,25 @@
 		<a><button>Pay Fee</button></a>
 	</div>
 </div>
+<div>
+	<ul class="navbar">
+		<li class="active"><a href="#">Home</a></li>
+		<li class="active"><a href="#">Exams</a></li>
+		<li class="active"><a href="#">Academics</a></li>
+		<li class="active"><a href="#">Gallery</a></li>
+		<li class="active"><a href="#">Contact</a></li>
+		<li class="active" id="about-button"><a href="#">About us</a></li>
+	</ul>
+</div>
+<br><br>
+<!-- Flickity HTML init -->
+<div class="carousel" data-flickity='{ "autoPlay": true }'>
+  <div class="carousel-cell"><img src="images/cover1.jpg"></div>
+  <div class="carousel-cell"><img src="images/cover2.jpg"></div>
+  <div class="carousel-cell"><img src="images/cover3.jpg"></div>
+  <div class="carousel-cell"><img src="images/cover4.jpg"></div>
+</div>
+<!-- flickity JavaScript -->
+ <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
