@@ -1,4 +1,5 @@
 * {margin: 0%;}
+body { background-color: #f0f2f5; }
 .top_bar {
 	display: flex;
 	width: 100%;
@@ -132,6 +133,75 @@ body { font-family: sans-serif; }
   border-radius: 5px;
   counter-increment: gallery-cell;
 }
+.notif {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: sans-serif;
+	background-color: #eb0000;
+	margin-left: 500px;
+	margin-right: 500px;
+	height: 100px;
+	border-radius: 9px;
+	color: white;
+	box-shadow: 2px 2px 5px 5px black;
+}
+.notif_button a {
+	margin-top: 4px;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	font-family: sans-serif;
+}
+.notif_button a:hover {
+	border: 0.5px solid white;
+	background-color: #f73636;
+	cursor: pointer;
+	font-size: 18px;
+	padding: 3px;
+}
+.tiles {
+	background-color: white;
+	margin: 100px 200px;
+	box-shadow: 0 0 5px 1px black;
+	height: 150px;
+	text-align: center;
+}
+.tiles span {
+	margin-right: 30px;
+	line-height: 130px;
+}
+.tiles img {
+	width: 28%;
+	float: right;
+}
+
+.tiles2 {
+	background-color: white;
+	margin: 100px 200px;
+	box-shadow: 0 0 5px 1px black;
+	height: 180px;
+}
+.list1 {
+	margin-top: 30px;
+	margin-right: 30px;
+	text-align: right;
+	float: right;
+}
+.list1 ul li {
+	margin: 10px;
+	text-align: left;
+}
+.tiles2 span {
+	margin-right: 30px;
+	line-height: 130px;
+}
+.tiles2 img {
+	width: 28%;
+	float: left;
+}
 
 @media only screen and (max-width: 600px) {
 	.container1{
@@ -172,4 +242,9 @@ body { font-family: sans-serif; }
     	 align-items: center;
          justify-content: center;
     }
+	.tiles, .tiles2 {
+		margin-left: 1px;
+		margin-right: 1px;
+		font-size: xx-small;
+	}
 }
