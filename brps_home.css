@@ -330,4 +330,15 @@ body { font-family: sans-serif; }
 		margin-left: 20px;
 		margin-right: 20px;
 	}
+	.message {
+		flex-direction: column;
+		text-align: center;
+	}
+	.message-contents {
+		margin-top: 40px;
+	}
+	.message-contents-img{
+		margin-right: 0px;
+
+	}
 }
