@@ -43,6 +43,7 @@
 	</ul>
 </div>
 <br><br>
+
 <!-- Flickity HTML init -->
 <div class="carousel" data-flickity='{ "autoPlay": true }'>
   <div class="carousel-cell"><img src="images/cover1.jpg"></div>
@@ -89,7 +90,35 @@
 	</p>
 	<button id="mybtn" onclick="myfunction()">Pause</button>
 </div>
-<script>
+<video autoplay muted loop id="message-vid" src="videos/vid2.mp4">Video Not Supported</video>
+<div class="message">
+	 <div class="message-contents-img">
+	  <img src="images/principal.jpg" alt="Our Principal">
+      <h4>Mrs Yasmeen Ajaz</h4>
+	  <p>Principal and Co Founder</p>
+     </div>
+  <div class="message-contents">
+  <h1>Principal's message</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, omnis quis cumque laborum atque vero
+	   repudiandae nostrum quasi dolor commodi alias assumenda praesentium nihil aspernatur vel unde similique
+	   asperiores magnam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima error unde 
+	   porro magni pariatur hic, ab et voluptatibus quo earum nobis nisi amet laudantium eaque incidunt.
+	   Minima nisi molestias nobis?
+	   Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, omnis quis cumque laborum atque vero
+	   repudiandae nostrum quasi dolor commodi alias assumenda praesentium nihil aspernatur vel unde similique
+	   asperiores magnam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima error unde 
+	   porro magni pariatur hic, ab et voluptatibus quo earum nobis nisi amet laudantium eaque incidunt.
+	   Minima nisi molestias nobis?
+	   Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, omnis quis cumque laborum atque vero
+	   repudiandae nostrum quasi dolor commodi alias assumenda praesentium nihil aspernatur vel unde similique
+	   asperiores magnam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima error unde 
+	   porro magni pariatur hic, ab et voluptatibus quo earum nobis nisi amet laudantium eaque incidunt.
+	   Minima nisi molestias nobis?
+  </p>
+  <button id="mybtn2" onclick="myfunction1()">Pause</button>
+</div>
+</div>
+<script> /* Javascript for Learn About Us Box */
 	let video = document.getElementById("myvideo");
 	let btn = document.getElementById("mybtn")
 	function myfunction() {
@@ -99,6 +128,19 @@
 		} else {
 			video.pause();
 			btn.innerHTML = "Play";
+		}
+	}
+</script>
+<script> /* Javascript for Primcipal's Message Box */
+	let video1 = document.getElementById("message-vid");
+	let btn1 = document.getElementById("mybtn2")
+	function myfunction1() {
+		if(video1.paused) {
+			video1.play();
+			btn1.innerHTML = "Pause";
+		} else {
+			video1.pause();
+			btn1.innerHTML = "Play";
 		}
 	}
 </script>
