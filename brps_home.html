@@ -50,6 +50,8 @@
   <div class="carousel-cell"><img src="images/cover3.jpg"></div>
   <div class="carousel-cell"><img src="images/cover4.jpg"></div>
 </div>
+<br><br>
+<hr>
 <div class="notif"> <h2>Notifications</h2>
 	<div class="notif_button"><a href="#">Click Here To See Them All</a></div>
 </div>
@@ -67,6 +69,39 @@
 	</div>
 	<img src="images/vision2.jpg" alt="This is a classroom">
 </div>
+<video autoplay muted loop id="myvideo" src="videos/vid1.mp4">
+	Your Browser Does Not Support HTML5 Video
+</video>
+<div class="content">
+	<h1>Learn About Us</h1>
+	<p>At Babur Reyan Public School, we  shape the students not merely as technical manpower but highly 
+		motivated creative professionals with highest degree of skillful knowledge blended with rich ethical
+		 values .We do not confine our teaching learning process to imparting theoretical knowledge alone but 
+		 put the student to extensive laboratory work, expose them to the actual world of work through technical 
+		 visits ,practical trainings, industry based and innovative projects and internships. The rich record of 
+		 holding co-curricular and extra-curricular activities in the institution and interaction with high profile 
+		 rsonalities from different walks of life through interactive programmes, extension lectures and expert 
+		 lectures brace the students with high quality communication skills and challenge facing qualities.
+		 It is truly a life experience. We invite you to explore our dynamic and diverse community by paying
+		a visit at your convenience. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, eos provident 
+		cum voluptates minima dolorum dicta! Eaque at amet voluptatibus nam dolores! Ratione nostrum tempora ex 
+		voluptatem, laudantium impedit recusandae.
+	</p>
+	<button id="mybtn" onclick="myfunction()">Pause</button>
+</div>
+<script>
+	let video = document.getElementById("myvideo");
+	let btn = document.getElementById("mybtn")
+	function myfunction() {
+		if(video.paused) {
+			video.play();
+			btn.innerHTML = "Pause";
+		} else {
+			video.pause();
+			btn.innerHTML = "Play";
+		}
+	}
+</script>
 <!-- flickity JavaScript -->
  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
