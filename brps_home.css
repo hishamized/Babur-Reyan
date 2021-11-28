@@ -317,6 +317,7 @@ body { font-family: sans-serif; }
 	width: 315px;
 	height: 315px;
 	box-shadow: 0 0 20px 3px rgba(0, 204, 255, 0.801);
+	border-radius: 3px;
 }
 .footer h1 {
 	font-size: 22px;
@@ -331,6 +332,7 @@ body { font-family: sans-serif; }
 	border-radius: 4px;
 	background-color:rgba(255, 255, 255, 0.1);
 	box-shadow: 0 0 10px 2px whitesmoke;
+	transition: 0.2s;
 }
 .footer {
 	color: white;
@@ -343,6 +345,19 @@ body { font-family: sans-serif; }
 	display: flex;
 	flex-direction: column;
 	line-height: 50px;	
+}
+.smicons {
+	display: flex;
+	flex-direction: row;
+	width: 350px;
+	padding-top: 20px;
+}
+.smicons img {
+	padding-left: 20px;
+	padding-top: 20px;
+}
+.smlinks {
+	width: 80%;
 }
 @media only screen and (max-width: 600px) {
 	.container1{
@@ -415,5 +430,8 @@ body { font-family: sans-serif; }
 	}
 	.footer-col{
 		align-items: center;
+		margin: 0%;
+		margin-top: 40px;
+
 	}
 }
